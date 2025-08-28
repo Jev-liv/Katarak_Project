@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/predictionFragment">
+
+    <fragment
+        android:id="@+id/predictionFragment"
+        android:name="com.kel4.katarak_project.PredictionFragment"
+        android:label="Prediksi"
+        tools:layout="@layout/fragment_prediction">
+
+        <action
+            android:id="@+id/action_predictionFragment_to_fragment_katarak_infoo"
+            app:destination="@id/fragment_katarak_infoo" />
+        <action
+            android:id="@+id/action_predictionFragment_to_fragment_normal_info"
+            app:destination="@id/fragment_normal_info" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_katarak_infoo"
+        android:name="com.kel4.katarak_project.fragment_katarak_infoo"
+        android:label="Informasi Katarak (O)"
+        tools:layout="@layout/fragment_katarak_infoo" />
+
+    <fragment
+        android:id="@+id/fragment_normal_info"
+        android:name="com.kel4.katarak_project.fragment_normal_info"
+        android:label="Informasi Normal"
+        tools:layout="@layout/fragment_normal_info" />
+
+
+</navigation>

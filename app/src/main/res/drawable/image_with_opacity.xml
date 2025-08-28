@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap
+            android:src="@drawable/eye_image_placeholder"
+        android:gravity="center"/>
+    </item>
+    <item android:drawable="@android:color/transparent" android:alpha="0.5"/> <!-- Opacity 50% -->
+</layer-list>

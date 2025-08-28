@@ -1,0 +1,130 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/colorPrimary"
+    tools:context=".PredictionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DETEKSI DINI KATARAK"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:padding="16dp"/>
+
+        <ImageView
+            android:id="@+id/eyeImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:alpha="0.5"
+            app:srcCompat="@drawable/eye_image_placeholder" />
+
+        <!-- Importance Section -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/importanceCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/importanceTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Katarak"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/importanceText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Katarak adalah bagian dari sindrom geriatri. Seiring bertambahnya usia, protein pada lensa mata akan menggumpal dan secara perlahan membuat lensa menjadi keruh dan berkabut. Hal ini menyebabkan kemampuan lensa untuk memfokuskan cahaya berkurang. Akibatnya, penglihatan menjadi kabur dan tidak jelas. Kondisi inilah yang disebut dengan katarak."
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="4dp"
+                    android:textIsSelectable="false" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Factors Section -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/factorsCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/factorsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Penyebab Katarak"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/factorsText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    android:justificationMode="inter_word"
+                    android:textIsSelectable="false"
+                    android:text="
+Penyebab katarak yang paling umum ditemui adalah akibat proses penuaan atau trauma yang menyebabkan perubahan pada jaringan mata. Lensa mata sebagian besar terdiri dari air dan protein. Dengan bertambahnya usia, lensa menjadi semakin tebal dan tidak fleksibel.
+
+Hal tersebut menyebabkan gumpalan protein dan mengurangi cahaya yang masuk ke retina, sebuah lapisan yang sensitif terhadap cahaya yang terletak di belakang dalam mata. Kondisi tersebut pada akhirnya menyebabkan pandangan kabur dan tidak tajam. Perubahan lensa diawali dengan warna kuning kecoklatan ringan, tetapi semakin memburuk seiring dengan bertambahnya waktu.
+
+Beberapa kelainan genetik bawaan juga bisa menyebabkan masalah kesehatan lain yang bisa meningkatkan risiko katarak. Selain itu, katarak juga bisa disebabkan oleh kondisi mata lain, operasi mata sebelumnya, atau kondisi medis seperti diabetes. Penggunaan obat steroid jangka panjang juga bisa menyebabkan penyakit mata tersebut berkembang."
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Button -->
+        <Button
+            android:id="@+id/prediksi_katarak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/white"
+            android:text="DETEKSI KATARAK"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/ic_search" />
+    </LinearLayout>
+</ScrollView>
